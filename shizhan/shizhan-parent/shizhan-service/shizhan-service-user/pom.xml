@@ -11,8 +11,9 @@
 
     <artifactId>shizhan-service-user</artifactId>
 
-    <dependencies>
+    <description>用户微服务</description>
 
+    <dependencies>
         <dependency>
             <groupId>com.itheima</groupId>
             <artifactId>shizhan-service-user-api</artifactId>

@@ -12,8 +12,8 @@
     <artifactId>shizhan-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>shizhan-service-order</module>
         <module>shizhan-service-user</module>
+        <module>shizhan-service-file</module>
     </modules>
 
     <!--依赖-->

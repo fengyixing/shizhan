@@ -110,7 +110,19 @@ public class User implements Serializable{
     @Column(name = "areaid")
 	private String areaid;//地区ID
 
-
+	@Override
+	public String toString() {
+		return "User{" +
+				"username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", nickName='" + nickName + '\'' +
+				", name='" + name + '\'' +
+				", headPic='" + headPic + '\'' +
+				", qq='" + qq + '\'' +
+				", sex='" + sex + '\'' +
+				", birthday=" + birthday +
+				'}';
+	}
 
 	//get方法
 	public String getUsername() {

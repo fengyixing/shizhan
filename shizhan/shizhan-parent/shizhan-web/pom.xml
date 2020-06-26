@@ -11,9 +11,9 @@
 
     <artifactId>shizhan-web</artifactId>
     <packaging>pom</packaging>
-    <description>畅购静态页面父工程</description>
+    <description>畅购实战静态页面父工程</description>
     <modules>
-        <module>shizhan-web-myorder</module>
+        <module>shizhan-web-user</module>
     </modules>
     <dependencies>
         <dependency>
@@ -37,6 +37,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!--fastDFS文件上传-->
+        <dependency>
+            <groupId>net.oschina.zcx7878</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.27.0.0</version>
         </dependency>
     </dependencies>
 </project>
