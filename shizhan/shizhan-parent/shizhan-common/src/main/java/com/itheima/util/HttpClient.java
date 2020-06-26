@@ -69,9 +69,8 @@ public class HttpClient {
     }
 
     public void addParameter(String key, String value) {
-        if (param == null) {
+        if (param == null)
             param = new HashMap<String, String>();
-        }
         param.put(key, value);
     }
 
