@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="code-template" />
+        <module name="shizhan-common" />
+        <module name="shizhan-common-db" />
+        <module name="shizhan-eureka" />
+        <module name="shizhan-service-order" />
+        <module name="shizhan-service-order-api" />
+        <module name="shizhan-service-user" />
+        <module name="shizhan-service-user-api" />
+        <module name="shizhan-web-myorder" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="code-template" target="1.8" />
+      <module name="shizhan-common" target="1.8" />
+      <module name="shizhan-common-db" target="1.8" />
+      <module name="shizhan-eureka" target="1.8" />
+      <module name="shizhan-parent" target="1.8" />
+      <module name="shizhan-service" target="1.8" />
+      <module name="shizhan-service-api" target="1.8" />
+      <module name="shizhan-service-order" target="1.8" />
+      <module name="shizhan-service-order-api" target="1.8" />
+      <module name="shizhan-service-user" target="1.8" />
+      <module name="shizhan-service-user-api" target="1.8" />
+      <module name="shizhan-web" target="1.8" />
+      <module name="shizhan-web-myorder" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

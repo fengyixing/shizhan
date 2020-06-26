@@ -12,6 +12,7 @@
     <artifactId>shizhan-service-api</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>shizhan-service-order-api</module>
         <module>shizhan-service-user-api</module>
     </modules>
     <dependencies>

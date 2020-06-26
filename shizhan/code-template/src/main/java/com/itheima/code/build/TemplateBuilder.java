@@ -94,7 +94,7 @@ public class TemplateBuilder {
             String databaseType = metaData.getDatabaseProductName();
 
             //针对MySQL数据库进行相关生成操作
-            if("MySQL".equals(databaseType)){
+            if(databaseType.equals("MySQL")){
                 //获取所有表结构
                 ResultSet tableResultSet = metaData.getTables(null, "%", "%", new String[]{"TABLE"});
 
@@ -158,7 +158,7 @@ public class TemplateBuilder {
                         SwaggerModelProperties modelProperties = new SwaggerModelProperties();
                         modelProperties.setName(propertyName);
                         modelProperties.setType(JavaTypes.simpleNameLowerFirst(javaType));
-                        if("integer".equals(modelProperties.getType())){
+                        if(modelProperties.getType().equals("integer")){
                             modelProperties.setFormat("int32");
                         }
                         modelProperties.setDescription(remarks);
@@ -201,7 +201,7 @@ public class TemplateBuilder {
 
                     //添加swagger路径映射
                     String format="string";
-                    if("integer".equalsIgnoreCase(keyType) || "long".equalsIgnoreCase(keyType)){
+                    if(keyType.equalsIgnoreCase("integer") || keyType.equalsIgnoreCase("long")){
                         format="int64";
                     }
                     swaggerPathList.addAll(swaggerMethodInit(Table,table,StringUtils.firstLower(keyType),format));
